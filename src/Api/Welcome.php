@@ -2,14 +2,17 @@
 
 namespace App\Api;
 
-use Config;
-use Log;
-use DB;
+use App;
+use Input;
 
-class Welcome
+class Welcome extends Base
 {
 	public function sayHello($request, $response, $args)
 	{
-		return $response->withJson(['name' => $args['name']]);
+		if (Input::get('output', 'json') === 'json') {
+			return $response->withJson(['name' => $args['name']]);
+		} else {
+			return $this->view->render($response, 'hello.html', ['name' => $args['name']]);
+		}
 	}
 }
