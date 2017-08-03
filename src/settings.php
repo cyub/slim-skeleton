@@ -18,7 +18,8 @@ return [
         ],
 
         'alias' => [
-            //'App'       => Tink\Common\Facades\App::class,
+            'App'       => Tink\Common\Facades\App::class,
+            'Input'     => Tink\Common\Facades\Input::class,
             'Log'       => Tink\Common\Facades\Log::class,
             'Cache'     => Tink\Common\Facades\Cache::class,
             'DB'        => Tink\Common\Facades\DB::class,
