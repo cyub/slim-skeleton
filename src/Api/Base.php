@@ -18,8 +18,8 @@ class Base
 	 */
 	public function __get($componet)
 	{
-		if (isset($this->container->{$componet})) {
-			return $this->container->{$componet};
+		if ($this->container->has($componet)) {
+			return $this->container->get($componet);
 		}
 	}
 	

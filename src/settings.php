@@ -1,12 +1,11 @@
 <?php
 return [
     'settings' => [
-        'mode' => 'development',
         'displayErrorDetails' => true, // set to false in production
         'addContentLengthHeader' => false, // Allow the web server to send the content-length header
-        'configurePath' => __DIR__ . '/../config',
 
         'providers' => [
+            Tink\Common\ServiceProviders\DotenvServiceProvider::class,
             Tink\Common\ServiceProviders\ConfigureServiceProvider::class,
             Tink\Common\ServiceProviders\FacadeServiceProvider::class,
             Tink\Common\ServiceProviders\LoggerServiceProvider::class,
