@@ -8,3 +8,6 @@
 php composer.phar create-project tink/slim-skeleton [app-name]
 ```
 其中app-name是你的应用名称
+
+## 详细说明
+见 [cyub/slim-components](https://github.com/cyub/slim-components) readme
