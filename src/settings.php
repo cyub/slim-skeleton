@@ -5,8 +5,6 @@ return [
         'addContentLengthHeader' => false, // Allow the web server to send the content-length header
 
         'providers' => [
-            Tink\Common\ServiceProviders\DotenvServiceProvider::class,
-            Tink\Common\ServiceProviders\ConfigureServiceProvider::class,
             Tink\Common\ServiceProviders\FacadeServiceProvider::class,
             Tink\Common\ServiceProviders\LoggerServiceProvider::class,
             Tink\Common\ServiceProviders\DBServiceProvider::class,
